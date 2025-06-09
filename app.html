@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <ul>
+            <a href="#">
+                <li>Projetos</li>
+            </a>
+            <a href="#">
+                <li>Sobre</li>
+            </a>
+            <a href="#">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </header>
+
+    <div id="content" class="hidden">
+        <section id="banner">
+            <h1>QUEM SOU EU?</h1>
+            <br />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae
+                enim bibendum, tristique nulla quis, vulputate magna. Maecenas tempor
+                augue urna, vitae laoreet nisl facilisis sit amet. Curabitur tempor
+                tellus vitae dui molestie lacinia. Praesent sed posuere quam. Donec
+                viverra ullamcorper justo, gravida gravida felis suscipit ornare. Ut
+                efficitur sagittis diam, quis tincidunt tellus. Aenean eget sapien
+                pretium, volutpat ante nec, viverra erat. Integer in enim venenatis,
+                porta mi nec, condimentum ante. Class aptent taciti sociosqu ad litora
+                torquent per conubia nostra, per inceptos himenaeos. Etiam lorem
+                ipsum, vestibulum eu quam ut, dictum fringilla arcu.
+            </p>
+        </section>
+    </div>
+
+    <div id="tecnologias" class="hidden">
+        <div class="grid-tecnologias">
+            <div class="icone">
+                <img src="img/JS.png" alt="js">
+                <span class="subTexto">JavaScript</span>
+            </div>
+            <div class="icone">
+                <img src="img/NodeJs.png" alt="node">
+                <span class="subTexto">Node.js</span>
+            </div>
+            <div class="icone">
+                <img src="img/HTML5.png" alt="html">
+                <span class="subTexto">HTML5</span>
+            </div>
+            <div class="icone">
+                <img src="img/CSS3.png" alt="css">
+                <span class="subTexto">CSS3</span>
+            </div>
+            <div class="icone">
+                <img src="img/CSharp.png" alt="c#">
+                <span class="subTexto">C#</span>
+            </div>
+        </div>
+
+        <div class="info-tecnologias">
+            <h1>Minhas Principais Tecnologias</h1>
+            <h4>Front-end: HTML5, CSS3, JavaScript</h4>
+            <h4>Back-end: Node.js, C#</h4><br>
+            <p>Desenvolvo aplicações modernas, priorizando tanto o desempenho eficiente quanto uma experiência do usuário fluida e envolvente. Meu objetivo é criar soluções tecnológicas que sejam rápidas, intuitivas e capazes de atender às necessidades dos usuários com máxima qualidade</p>
+        </div>
+    </div>
+
+    <div id="divProjeto" class="hidden">
+        <h1>Projetos</h1>
+        <section class="projeto">
+            <h1>Jogo da Memoria</h1>
+            <button class="btnProjeto" id="verProjeto">Ver projeto</button>
+        </section>
+        <div class="memory hiddenGame" id="memory" >
+        <section id="jogoDiv"></section>
+            <br>
+            <h3 id="txtPontos" style="color: black;">Pontos: 0</h3>
+            <button id="resetarJogo">RESET</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Seu Projeto. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
