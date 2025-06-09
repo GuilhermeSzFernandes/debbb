@@ -20,11 +20,11 @@ var bloqueado = false;
     elementos.forEach((elemento) => observador  .observe(elemento));
 
     function embaralharImgs(){
-        pontuacao = 0;
+        var txtPontos = document.getElementById('txtPontos').innerText = "Pontos: 0";
         const jogoDiv = document.getElementById('jogoDiv');
         var paths = ["./img/1.jpg", "./img/1_v2.jpg", "./img/2.jpg", "./img/2_v2.jpg", "./img/3.jpg", "./img/3_v2.jpg", "./img/4.jpg", "./img/4_v2.jpg"]
+        pontuacao = 0;
         
-        txtPontos.innerText = `Pontos: ${pontuacao}`;
         jogoDiv.innerHTML = "";
 
         while(paths.length > 0){
@@ -34,7 +34,6 @@ var bloqueado = false;
             let imgEmb = document.createElement("img")
             imgEmb.src = "./img/costas.jpg"
             imgEmb.id = pathimg
-            imgEmb.title = pathimg
             imgEmb.className = "card virado"
             jogoDiv.appendChild(imgEmb)
         
@@ -81,14 +80,20 @@ var bloqueado = false;
 
                     cartasClicadas.length = 0
                     bloqueado = false;
+
+                    
                 }, 1000);
             }
         }
 
-        if(pontuacao == 4){
-            alert("Parabéns, você venceu!")
-            embaralharImgs()
-        }
+        setTimeout(() => {
+            if(pontuacao == 4){
+                alert("Parabéns, você venceu!")
+                embaralharImgs()
+            }
+        },1000)
+
+        
     }
 
 document.getElementById('resetarJogo').addEventListener("click", function () {
@@ -97,6 +102,7 @@ document.getElementById('resetarJogo').addEventListener("click", function () {
 
 document.getElementById('verProjeto').addEventListener("click", function () {
     const memory = document.getElementById('memory')
+    const jogoDiv = document.getElementById('jogoDiv')
 
     if(memory.classList.contains("hiddenGame")){
         memory.classList.remove("hiddenGame");
@@ -104,7 +110,7 @@ document.getElementById('verProjeto').addEventListener("click", function () {
         embaralharImgs()
     }
     else{
-        memory.innerHTML = ""
+        jogoDiv.innerHTML = ""
         memory.classList.add("hiddenGame");
         memory.classList.remove("show");
     }

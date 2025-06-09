@@ -370,3 +370,27 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#contato{
+    padding: 5% 0 5% 5%;
+    padding-right: 0px;
+    height: 500px;
+    width: 100%;
+}
+
+.form{
+    float: right;
+    padding-right: 10%;
+    
+}
+
+#contato form{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 2px #000 solid;
+    border-bottom: 0px;
+    border-right: 0px;
+    width: 100%;
+
+}

@@ -26,21 +26,24 @@
     </header>
 
     <div id="content" class="hidden">
-        <section id="banner">
-            <h1>QUEM SOU EU?</h1>
-            <br />
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae
-                enim bibendum, tristique nulla quis, vulputate magna. Maecenas tempor
-                augue urna, vitae laoreet nisl facilisis sit amet. Curabitur tempor
-                tellus vitae dui molestie lacinia. Praesent sed posuere quam. Donec
-                viverra ullamcorper justo, gravida gravida felis suscipit ornare. Ut
-                efficitur sagittis diam, quis tincidunt tellus. Aenean eget sapien
-                pretium, volutpat ante nec, viverra erat. Integer in enim venenatis,
-                porta mi nec, condimentum ante. Class aptent taciti sociosqu ad litora
-                torquent per conubia nostra, per inceptos himenaeos. Etiam lorem
-                ipsum, vestibulum eu quam ut, dictum fringilla arcu.
-            </p>
+        <section id="banner" style="width: 100%;">
+                <h1>QUEM SOU EU?</h1>
+                <br />
+                <section style="display: flex; width: 90%;">
+                    <p style="max-width: 90%;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae
+                        enim bibendum, tristique nulla quis, vulputate magna. Maecenas tempor
+                        augue urna, vitae laoreet nisl facilisis sit amet. Curabitur tempor
+                        tellus vitae dui molestie lacinia. Praesent sed posuere quam. Donec
+                        viverra ullamcorper justo, gravida gravida felis suscipit ornare. Ut
+                        efficitur sagittis diam, quis tincidunt tellus. Aenean eget sapien
+                    pretium, volutpat ante nec, viverra erat. Integer in enim venenatis,
+                    porta mi nec, condimentum ante. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos himenaeos. Etiam lorem
+                    ipsum, vestibulum eu quam ut, dictum fringilla arcu.
+                </p>
+                <img src="img/OIP.png" style="height: 200px; margin-top: -4%; margin-left: 05%;" alt="">
+            </section>
         </section>
     </div>
 
@@ -83,15 +86,29 @@
             <button class="btnProjeto" id="verProjeto">Ver projeto</button>
         </section>
         <div class="memory hiddenGame" id="memory" >
-        <section id="jogoDiv"></section>
+            <section id="jogoDiv"></section>
             <br>
             <h3 id="txtPontos" style="color: black;">Pontos: 0</h3>
             <button id="resetarJogo">RESET</button>
         </div>
     </div>
 
+    <div id="contato">
+        <h1>Contato</h1>
+        <section class="form">
+            <form action="#">
+                <label for="Nome"></label>
+                    <input type="text" id="Nome" placeholder="Nome Completo"><br>
+                <label for="Telefone"></label>
+                    <input type="number" id="Telefone" placeholder="(12) 345678910" required><br>
+                <label for="email"></label>
+                    <input type="email" id="email" placeholder="E-mail"><br>
+            </form>
+        </section>
+    </div>
+
     <footer>
-        <p>© 2025 Seu Projeto. Todos os direitos reservados.</p>
+        <p>© 2025 Projeto Portifolio. Todos os direitos reservados.</p>
     </footer>
 
 </body>
